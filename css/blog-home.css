@@ -8,6 +8,15 @@ body {
   padding-top: 54px;
 }
 
+.padding-lr-5 {
+  padding: 0 5px;
+}
+
+.profile-icon-size {
+  width: 30px;
+  height: 30px;
+}
+
 @media (min-width: 992px) {
   body {
     padding-top: 56px;
