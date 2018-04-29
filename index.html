@@ -16,6 +16,9 @@
     <!-- Custom styles for this template -->
     <link href="css/blog-home.css" rel="stylesheet">
 
+    <!-- Link icon library for social media-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   </head>
 
   <body>
@@ -29,7 +32,7 @@
             <button type="button" class="btn btn-light btn-sm">CREATE</button>
           </li>
           <li class="nav-item padding-lr-5">
-            <button type="button" class="btn btn-light btn-sm">SIGN UP/LOG IN</button>
+            <button class="btn btn-light btn-sm" id="modalBtn">SIGN UP/LOG IN</button>
           </li>
           <li class="nav-item padding-lr-5">
             <img class="profile-icon-size" src="resources/images/profile-icon-9.png" alt="..." class="rounded-circle">
@@ -181,7 +184,31 @@
     <!-- Bootstrap core JavaScript -->
     <script src="libraries/jquery/jquery.min.js"></script>
     <script src="libraries/bootstrap/js/bootstrap.bundle.min.js"></script>
-
+    <script src = "https://ajax.aspnetcdn.com/ajax/knockout/knockout-3.1.0.js" 
+   type = "text/javascript"></script>
+    <script src="libraries/jquery/login.js"></script>
+  <section id="test-modal" class="modal fade" tabindex="-1" data-width="760">
+              <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                   
+                    <h4 class="modal-title">Log In</h4>
+                </div>
+                <div class="modal-body">
+                                <div class="form-body">
+                                    <div class="form-group">
+                                        <button type="button" class="btn btn-light btn-lg" data-dismiss="modal" aria-hidden="true"><i class="fa fa-facebook"></i></button>
+                                         <button type="button" class="btn btn-light btn-lg" data-dismiss="modal" aria-hidden="true"><i class="fa fa-google"></i></button>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                <div class="modal-footer">
+                    <button type="button" data-dismiss="modal" class="btn btn-default">Cancel</button>
+                </div>
+              </div>
+              </div>
+            </section>
   </body>
 
 </html>
